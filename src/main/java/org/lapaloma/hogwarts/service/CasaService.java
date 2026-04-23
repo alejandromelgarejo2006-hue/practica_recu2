@@ -62,8 +62,8 @@ public class CasaService {
 
         List<Casa> lista = casaDAO.obtenerCasaPorNombre(nombre);
 
-        // Esto provoca error s
-        lista =null;
+        /*// Esto provoca error s
+        lista =null;*/
         
         if (lista == null || lista.isEmpty()) {
             throw new CasaNoEncontradaException(
